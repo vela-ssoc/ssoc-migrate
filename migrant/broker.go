@@ -27,6 +27,9 @@ func (mig *Broker) Execute(ctx context.Context) error {
 	if err != nil {
 		return err
 	}
+	for _, dat := dats {
+		dat.Status = false
+	}
 
 	return mig.dest.Broker.WithContext(ctx).Create(dats...)
 }

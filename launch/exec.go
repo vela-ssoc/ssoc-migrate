@@ -59,6 +59,10 @@ func Exec(ctx context.Context, fromDSN, destDSN string) error {
 		migrant.NewEffect(from, dest, log),
 		migrant.NewCertificate(from, dest, log),
 		migrant.NewBroker(from, dest, log),
+		migrant.NewElastic(from, dest, log),
+		migrant.NewGridFile(from, dest, log),
+		migrant.NewGridChunk(from, dest, log),
+		migrant.NewMinionBin(from, dest, log),
 	}
 	log.Info("开始执行数据迁移")
 	for _, mig := range migrants {
