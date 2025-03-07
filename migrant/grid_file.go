@@ -1,3 +1,5 @@
+package migrant
+
 import (
 	"context"
 	"log/slog"
