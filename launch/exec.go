@@ -57,6 +57,7 @@ func Exec(ctx context.Context, fromDSN, destDSN string) error {
 		migrant.NewNotifier(from, dest, log),
 		migrant.NewSubstance(from, dest, log),
 		migrant.NewEffect(from, dest, log),
+		migrant.NewCertificate(from, dest, log),
 		migrant.NewBroker(from, dest, log),
 	}
 	log.Info("开始执行数据迁移")
