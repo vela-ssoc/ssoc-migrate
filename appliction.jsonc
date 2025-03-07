@@ -1,0 +1,8 @@
+{
+  "from": {
+    "dsn": "username:password@tcp(db.example.com:3306)/ssoc?parseTime=True&timeout=10s"// mysql
+  },
+  "dest": {
+    "dsn": "opengauss://username:password@db.example.com:15432/ssoc" // gauss
+  }
+}
