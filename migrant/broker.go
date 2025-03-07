@@ -27,7 +27,7 @@ func (mig *Broker) Execute(ctx context.Context) error {
 	if err != nil {
 		return err
 	}
-	for _, dat := dats {
+	for _, dat := range dats {
 		dat.Status = false
 	}
 
