@@ -1,8 +1,15 @@
 {
   "from": {
-    "dsn": "username:password@tcp(db.example.com:3306)/ssoc?parseTime=True&timeout=10s"// mysql
+    // mysql dsn example
+    "dsn": "username:password@tcp(db.example.com:3306)/ssoc?parseTime=True&timeout=10s"
   },
   "dest": {
-    "dsn": "opengauss://username:password@db.example.com:15432/ssoc" // gauss
-  }
+    // gauss dsn example
+    "dsn": "opengauss://username:password@db.example.com:15432/ssoc"
+  },
+  "tables": [
+    "substance_task",
+    "third",
+    "third_customized"
+  ]
 }

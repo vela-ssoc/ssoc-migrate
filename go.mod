@@ -2,7 +2,7 @@ module github.com/vela-ssoc/ssoc-migrate
 
 go 1.24.0
 
-require github.com/vela-ssoc/vela-common-mb v0.0.0-20250307055348-cd671c47386c
+require github.com/vela-ssoc/vela-common-mb v0.0.0-20250310060149-0e7d57b7ae28
 
 require (
 	filippo.io/edwards25519 v1.1.0 // indirect
@@ -12,7 +12,7 @@ require (
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/jinzhu/now v1.1.5 // indirect
 	github.com/tjfoc/gmsm v1.4.1 // indirect
-	github.com/vela-ssoc/opengauss v0.0.0-20250306075012-bb6849e21b4a // indirect
+	github.com/vela-ssoc/opengauss v0.0.0-20250307012047-4cdb16f3d678 // indirect
 	golang.org/x/crypto v0.36.0 // indirect
 	golang.org/x/mod v0.24.0 // indirect
 	golang.org/x/sync v0.12.0 // indirect
