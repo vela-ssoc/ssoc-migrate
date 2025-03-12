@@ -2,7 +2,7 @@ module github.com/vela-ssoc/ssoc-migrate
 
 go 1.24.0
 
-require github.com/vela-ssoc/vela-common-mb v0.0.0-20250310060149-0e7d57b7ae28
+require github.com/vela-ssoc/vela-common-mb v0.0.0-20250311091412-290ad49b5a9d
 
 require (
 	filippo.io/edwards25519 v1.1.0 // indirect

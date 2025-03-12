@@ -78,6 +78,7 @@ func Exec(ctx context.Context, fromDSN, destDSN string, tables []string) error {
 		attrs := []any{slog.String("name", name)}
 		if _, exists := allows[name]; !exists {
 			log.Warn("忽略表迁移", attrs...)
+			continue
 		}
 
 		log.Info("正在迁移数据", attrs...)
