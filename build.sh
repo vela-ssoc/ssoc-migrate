@@ -2,7 +2,8 @@
 
 # 1. 获取程序名。
 DIR_NAME=$(basename $(pwd))
-BIN_NAME=${DIR_NAME}"-"$(date +%Y%m%d)$(go env GOEXE)
+VER=$(TZ="Europe/London" date -d "$(git log -1 --format=%cd --date=iso)"  +"%y.%-m.%-d-%H%M%S")
+BIN_NAME=${DIR_NAME}"-"v$VER$(go env GOEXE)
 echo "程序名为："${BIN_NAME}
 
 # 2. 如果执行的是清理命令，清理完就退出。
